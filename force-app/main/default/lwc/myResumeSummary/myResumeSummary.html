@@ -1,0 +1,15 @@
+<template>
+    <section>
+        <h2 class='section_heading slds-var-p-bottom_medium'>{details.HEADING}</h2>
+        <p class='font16'>
+            {details.DESCRIPTION}
+        </p>
+        <template if:true={details.KEY_POINTS}>
+            <ul class='slds-var-m-top_medium slds-var-p-left_large summary_list slds-is-relative'>
+                <template for:each={details.KEY_POINTS} for:item='item'>
+                    <li key={item} class='font16'>{item}</li>
+                </template>
+            </ul>
+        </template>
+    </section>
+</template>
