@@ -64,7 +64,8 @@ export const EXPERIENCE_DATA = {
                     'Javascript',
                     'HTML',
                     'CSS',
-                    'Lightning Web Components and Lightning Design System',
+                    'Lightning Web Components',
+                    'Lightning Design System',
                     'Apex',
                     'SOQL',
                 ]
@@ -106,3 +107,64 @@ export const EDUCATION_DATA = {
     ],
 };
 
+export const SKILLS_AND_TOOLS_DATA = {
+    HEADING: 'SKILLS & TOOLS',
+    SKILLS:[
+        {
+            HEADING: 'GOOD KNOWLADGE',
+            SKILLS_LIST: [
+                'Javascript',
+                'HTML',
+                'CSS',
+            ],
+        },
+        {
+            HEADING: 'SOLID BASICS',
+            SKILLS_LIST: [
+                'React',
+                'Typescript',
+                'React Redux',
+                'React Router',
+                'styled-components',
+                'Sass',
+            ],
+        },
+        {
+            HEADING: 'BASICS',
+            SKILLS_LIST: [
+                'Git & npm',
+                'C#, Entity Framework',
+                'Salesforce',
+                'Lightning Web Components & Aura Components',
+                'Apex',
+                'SOQL & SSQL',
+            ],
+        },
+    ]
+};
+
+export const LANGUAGES_DATA = {
+    HEADING: 'LANGUAGES',
+    LIST:[
+        {
+            NAME: 'Polish',
+            LEVEL: 'Native',
+        },
+        {
+            NAME: 'English',
+            LEVEL: '(B1/B2)',
+        },
+    ]
+};
+
+export const INTERESTS_DATA = {
+    HEADING: 'INTERESTS',
+    LIST:[
+        'Computer games',
+        'Books',
+        'Cryptocurrencies',
+        'UX',
+        'Online marketing',
+        'Social media',
+    ],
+};

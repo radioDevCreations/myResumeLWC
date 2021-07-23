@@ -1,0 +1,16 @@
+<template>
+    <section>
+        <h2 class='section_heading'>{details.HEADING}</h2>
+        <div>
+            <div class='slds-var-p-left_x-large slds-is-relative'>
+                <template for:each={details.LIST} for:item='language'>
+                    <div key={language.NAME} class='slds-var-m-top_medium'>
+                        <h3 class='font16 green_color'>{language.NAME}</h3>
+                        <div class='font16 languageInfo'>{language.LEVEL}</div>
+                    </div>
+                </template>
+                    
+            </div>
+        </div>
+    </section>
+</template>

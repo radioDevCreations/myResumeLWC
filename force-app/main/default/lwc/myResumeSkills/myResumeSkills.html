@@ -1,0 +1,22 @@
+<template>
+    <section>
+        <h2 class='section_heading'>{details.HEADING}</h2>
+        <div>
+            <div class='slds-var-p-left_x-large slds-is-relative'>
+                <template for:each={details.SKILLS} for:item='category'>
+                    <div key={category.HEADING} class='slds-var-m-top_medium'>
+                        <h3 class='section_subHeading'>{category.HEADING}</h3>
+                        <ul>
+                            <template for:each={category.SKILLS_LIST} for:item='skill'>
+                                <li key={skill} class='slds-var-m-top_x-small slds-var-m-left_x-large subText'>
+                                    <span>{skill}</span>
+                                </li>
+                            </template>
+                        </ul>
+                    </div>
+                </template>
+                    
+            </div>
+        </div>
+    </section>
+</template>
