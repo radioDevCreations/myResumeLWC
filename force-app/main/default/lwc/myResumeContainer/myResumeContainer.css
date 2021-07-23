@@ -6,3 +6,9 @@
     background: #000;
     color: #fff;
 }
+
+.headline{
+    height: 16px;
+    background: #008134;
+    content: '';
+}

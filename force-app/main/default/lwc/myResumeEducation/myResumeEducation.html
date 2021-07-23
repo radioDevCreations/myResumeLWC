@@ -1,0 +1,30 @@
+<template>
+    <section>
+        <h2 class='section_heading'>{details.HEADING}</h2>
+        <div>
+            <ul>
+                <template for:each={details.LIST} for:item="list">
+                    <li key={list.NAME} class="slds-var-m-bottom_medium">
+                        <div class="slds-grid">
+                            <template if:true={details.ICON}>
+                                <img src={details.ICON} alt="icon" width="20px" class="slds-var-m-right_xx-small" />
+                            </template>
+                            <div class="fontWeight700 font16 green_color">
+                                {list.SCHOOL_NAME}
+                            </div>
+                        </div>
+                        <template if:true={list.NAME}>
+                            <div class="name green-color font16">{list.NAME}</div>
+                        </template>
+                        <template if:true={list.DURATION}>
+                            <div class="subText font16">{list.DURATION}</div>
+                        </template>
+                        <template if:true={list.DEGREE}>
+                            <div class="subText font16">{list.DEGREE}</div>
+                        </template>
+                    </li>
+                </template>
+            </ul>
+        </div>
+    </section>
+</template>

@@ -7,20 +7,21 @@
                 profile-image={PROFILE_IMAGE}>
             </c-my-resume-header>
         </div>
+        <div class='headline'></div>
         <div class='slds-var-p-around_medium'>
             <c-my-resume-summary
                 details={CAREER_SUMMARY}>
             </c-my-resume-summary>
         </div>
         <div class='slds-var-p-around_medium'>
-            <div class='slds-grid slds-wrap'>
-                <div class='slds-col slds-size_1-of-1 slds-medium-size_9-of-12 slds-large-size_9-of-12'>
-                <c-my-resume-experience details={EXPERIENCE_DATA}></c-my-resume-experience>
-                </div>
-                <div class='slds-col slds-size_1-of-1 slds-medium-size_3-of-12 slds-large-size_2-of-12'>
-                    Other section
-                </div>
-            </div>
+            <c-my-resume-experience 
+                details={EXPERIENCE_DATA}>
+            </c-my-resume-experience>
+        </div>
+        <div class='slds-var-p-around_medium'>
+            <c-my-resume-education 
+                details={EDUCATION_DATA}>
+            </c-my-resume-education>
         </div>
     </div>
 </template>

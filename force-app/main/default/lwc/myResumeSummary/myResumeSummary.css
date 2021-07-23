@@ -4,7 +4,7 @@
 }
 
 .summary_list li:before {
-    content: "\2724";
+    content: "\2756";
     position: absolute;
     left: 0;
 }
