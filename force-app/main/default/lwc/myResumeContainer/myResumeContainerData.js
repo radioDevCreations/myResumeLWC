@@ -1,6 +1,8 @@
 import SOCIAL from '@salesforce/resourceUrl/SOCIAL';
 import IMAGE from '@salesforce/resourceUrl/IMAGE';
 
+export const PROFILE_IMAGE = IMAGE;
+
 export const SOCIAL_LINKS = [
     {
         type:'instagram',
@@ -27,9 +29,7 @@ export const USER_DETAILS = {
         ROLE: "Junior Frontend Developer",
         EMAIL: "radekrozmus@gmail.com",
         PHONE: "666 666 666",
-    };
-
-export const PROFILE_IMAGE = IMAGE;
+};
 
 export const CAREER_SUMMARY = {
     HEADING: 'ABOUT ME',
@@ -45,7 +45,7 @@ export const CAREER_SUMMARY = {
         'Currentrly working as Web Developer Intern',
         'I am also interested in online marketing and cryptocurrencies',
     ],
-}
+};
 
 export const EXPERIENCE_DATA = {
     HEADING: 'WORK EXPERIENCE',
@@ -87,4 +87,22 @@ export const EXPERIENCE_DATA = {
             },
         },
     ]
-}
+};
+
+export const EDUCATION_DATA = {
+    ICON: SOCIAL + '/SOCIAL/education.svg',
+    HEADING: 'EDUCATION',
+    LIST:[
+        {
+            NAME: 'Computer Science and Econometrics',
+            SCHOOL_NAME: 'College Of Economics And Computer Science In Cracow',
+            DURATION: 'Sep 2019 - present',
+            DEGREE: 'first degree engineering studies',
+        },
+        {
+            SCHOOL_NAME: 'S. Staszic High School No. 1 In Chrzanów',
+            DURATION: 'Sep 2016 - May 2019',
+        },
+    ],
+};
+
