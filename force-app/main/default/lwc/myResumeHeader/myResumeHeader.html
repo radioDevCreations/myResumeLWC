@@ -17,10 +17,12 @@
                         </a>
                     </li>
                     <li class='slds-var-m-bottom_small'>
-                        <a href={phoneLink} class='link'>
+                        <template if:true={userDetails.PHONE}>
+                            <a href={phoneLink} class='link'>
                             <lightning-icon icon-name='utility:dialing' alternative-text='dialing' size='x-small' title='dialing' class='slds-var-m-right_small'></lightning-icon>
                             {userDetails.PHONE}
-                        </a>
+                            </a>
+                        </template>
                     </li>
                 </ul>
             </div>

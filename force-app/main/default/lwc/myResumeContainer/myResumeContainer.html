@@ -10,33 +10,52 @@
         <div class='headline'></div>
         <div class='slds-var-p-around_medium'>
             <c-my-resume-summary
-                details={CAREER_SUMMARY}>
+                name='CAREER_SUMMARY'
+                details={CAREER_SUMMARY}
+                onlanguagechange={setData}>
             </c-my-resume-summary>
         </div>
         <div class='slds-var-p-around_medium'>
             <c-my-resume-experience 
-                details={EXPERIENCE_DATA}>
+                name='EXPERIENCE_DATA'
+                details={EXPERIENCE_DATA}
+                onlanguagechange={setData}>
             </c-my-resume-experience>
         </div>
         <div class='slds-var-p-around_medium'>
             <c-my-resume-education 
-                details={EDUCATION_DATA}>
+                name='EDUCATION_DATA'
+                details={EDUCATION_DATA}
+                onlanguagechange={setData}>
             </c-my-resume-education>
         </div>
         <div class='slds-var-p-around_medium'>
             <c-my-resume-skills 
-                details={SKILLS_AND_TOOLS_DATA}>
+                name='SKILLS_AND_TOOLS_DATA'
+                details={SKILLS_AND_TOOLS_DATA}
+                onlanguagechange={setData}>
             </c-my-resume-skills>
         </div>
         <div class='slds-var-p-around_medium'>
             <c-my-resume-languages 
-                details={LANGUAGES_DATA}>
+                name='LANGUAGES_DATA'
+                details={LANGUAGES_DATA}
+                onlanguagechange={setData}>
             </c-my-resume-languages>
         </div>
         <div class='slds-var-p-around_medium'>
             <c-my-resume-interests 
-                details={INTERESTS_DATA}>
+                name='INTERESTS_DATA'
+                details={INTERESTS_DATA}
+                onlanguagechange={setData}>
             </c-my-resume-interests>
+        </div>
+        <div class='slds-var-p-around_medium'>
+            <lightning-combobox label={languageLabel} value={language} options={languageOptions} onchange={handleLanguageChange}>
+            </lightning-combobox>
+        </div>
+        <div>
+            <c-my-resume-footer></c-my-resume-footer>
         </div>
     </div>
 </template>
